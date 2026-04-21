@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>wanna know something?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="menu">
+<h1>wanna know something?</h1>
+
+<input id="name" placeholder="your name">
+
+<button onclick="create()">Create Room</button>
+
+<input id="code" placeholder="room code">
+
+<button onclick="join()">Join</button>
+</div>
+
+<div id="game" style="display:none">
+
+<h2 id="question"></h2>
+
+<textarea id="answer"></textarea>
+
+<button onclick="ready()">Ready</button>
+
+<div id="reveal"></div>
+
+<button onclick="next()">Next</button>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
